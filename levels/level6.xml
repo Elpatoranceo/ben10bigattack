@@ -1,0 +1,92 @@
+﻿<layers>
+	
+	<layer name="Enemies">
+	
+	<!-- Boss -->
+		<boss
+			id = "NNJ2" 
+			positionX = "4250" 
+			positionY = "350" 
+			damageMeele = "5" 
+			speedWalk = "5.5" 
+			speedBackShort = "10" 
+			speedBackLong  = "12"
+			speedRangeAttack  = "10" 
+			timeFindPlayer = "1600"
+			timeWaitThink  = "6000"
+			timeRangeShootActive = "9000"
+			timeSpecialAttack = "16000"
+			timeBoomerangAir = "3000"
+			speedXBullet = "16" 
+			damageBullet = "10"
+			damageBulletSpecial = "16"
+			health = "250"
+			score  = "3000"
+		/>
+
+	<!-- Enemies in the game -->
+		<freeEnemies>
+			<enemy id="DB1" x="100" y="340" speed="3.5" health="40" damage="6" points="
+" timeinit="5000"/>
+			<enemy id="DB2" x="550" y="340" speed="2.5" health="40" damage="5" damageProjectil="6" points="350" falling="1" timeinit="5000"/>
+			<!--<enemy id="SG1" x="1310" y="390" speed="1" health="0" damage="4" timeInit="1500" bonus="7" falling="1"/>-->
+		</freeEnemies>
+
+	<!-- Objects in the game -->
+		<objects>
+			<object id="LASER_DEVICE" x="1280" y="250" damage="3" num="10" separation="30" timeRepeat="150" type="2" />
+			<object id="LASER_DEVICE" x="1590" y="250" damage="3" num="10" separation="30" timeRepeat="150" type="2" />
+			<object id="SWITCH" x="2900" y="310" num="25" timeRepeat="100"/>
+			
+		</objects>
+		
+	<!-- screen 2 -->
+		<breakpoint maxEnemies="5">
+		<enemy id="CB" x="700" y="350" speed="6" health="28" damage="6" dir="2" points="250" falling="1" />
+		<enemy id="CB" x="800" y="325" speed="6" health="28" damage="6" dir="2" points="250" falling="1" />	
+		<enemy id="CB" x="900" y="337" speed="6" health="28" damage="6" dir="2" points="250" falling="1" />
+		</breakpoint>
+	
+	<!-- screen 3 -->	
+		<breakpoint maxEnemies="1">
+			
+		</breakpoint>
+	
+	<!-- screen 4 -->	
+		<breakpoint maxEnemies="3">
+		<enemy id="DB1" x="2400" y="315" speed="2.5" health="8" damage="6" points="350" timeinit="5000" falling="1"/>
+		<enemy id="DB1" x="2400" y="340" speed="2.5" health="8" damage="6" points="350" timeinit="5000" falling="1"/>
+		<enemy id="DB1" x="2450" y="340" speed="3.5" health="40" damage="6" points="350" timeinit="5000" falling="1"/>
+		<enemy id="DB2" speed="2.5" health="40" damage="5" dir="1" damageProjectil="6" points="350" />
+		</breakpoint>
+
+	<!-- screen 5 -->
+		<breakpoint maxEnemies="4">
+		<enemy id="DB1" x="3550" y="340" speed="3.5" health="40" damage="6" points="350" timeinit="5000" falling="1" bonus="7"/>
+		<enemy id="SG2" x="3530" y="310" speed="5" health="38" damage="5" damageProjectil="5" dir="2" points="300" color="3" falling="1" />		
+		<enemy id="SG2" x="3530" y="370" speed="5" health="38" damage="5" damageProjectil="5" dir="2" points="300" color="3" falling="1" />
+		<enemy id="CB" x="3050" y="340" speed="6" health="28" damage="6" dir="2" points="250" falling="1" />
+		</breakpoint>
+		
+			
+	</layer>
+	
+	
+	<layer name="Objects" cols="0" rows="0" tileW="30" tileH="30" collides="0">
+	</layer>
+
+	
+	<layer name="Background_01" cols="7" rows="1" tileW="600" tileH="400" collides="0">
+		<tile id="L32_1" c="0" r="0" />
+		<tile id="L32_2" c="1" r="0" />
+		<tile id="L32_1" c="2" r="0" />
+		<tile id="L32_2" c="3" r="0" />
+		<tile id="L32_1" c="4" r="0" />
+		<tile id="L32_1" c="5" r="0" />
+		<tile id="L32_2" c="6" r="0" />
+	</layer>
+	
+	<layer name="Sky_01" cols="3" rows="1" tileW="600" tileH="400" collides="0">
+	</layer>
+	
+</layers>

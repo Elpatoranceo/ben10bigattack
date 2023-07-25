@@ -1,0 +1,77 @@
+﻿<layers>
+	
+	<layer name="Enemies">
+	
+	<!-- boss -->
+				
+		<boss 
+			id = "FKINGSMALL"
+			positionX = "1850"
+			positionY = "350"
+			damageMeele = "15"
+			damageLaser = "20"
+			
+			speedWalkRutine  = "8"
+			speedWalkSpecial = "10"
+			speedWalkLastAttack = "12"
+			speedBack = "15"
+			
+			maxTimeActionRutine   = "5000"
+			maxTimeActionSpecialC = "2500"
+			maxTimeActionLastAttack = "2000"
+			
+			timeStandSpecialBalls = "2500"
+			timeStandSpecialLaser = "1500"
+			
+			speedBulletInit = "25"
+			speedBulletFollow = "20"
+			timeActiveBullet = "800"
+			
+			damageBullet = "15"
+			health = "250"
+			score = "3000"
+		/>
+
+	<!-- Enemies in the game -->
+		<freeEnemies>
+		<enemy id="SG2" x="1100" y="380" speed="5" health="38" damage="5" damageProjectil="5" dir="2" points="300" color="3" falling="1" />	
+		</freeEnemies>
+	<!-- Objects in the game -->
+		<objects>
+			<object id="RAIL" x="610" y="333" health="7" bonus="1"/>
+			<object id="RAIL" x="640" y="300" health="7" bonus="1"/>			
+			<object id="BOX1" x="900" y="300" health="7" bonus="2"/>
+			<object id="BOX1" x="900" y="390" health="7" bonus="4"/>
+			<object id="RAIL" x="1160" y="390" health="7" bonus="2"/>
+			<object id="RAIL" x="1190" y="360" health="7" bonus="3"/>
+			
+		</objects>
+		
+	<!-- screen 2 -->
+		<breakpoint maxEnemies="4">
+		<enemy id="CB" x="700" y="350" speed="6" health="28" damage="6" dir="2" points="250" falling="1" />
+		<enemy id="CB" x="800" y="325" speed="6" health="28" damage="6" dir="2" points="250" falling="1" />	
+		<enemy id="SG2" x="1100" y="310" speed="5" health="38" damage="5" damageProjectil="5" dir="2" points="300" color="3" falling="1" />
+		</breakpoint>
+
+			
+	</layer>
+	
+	
+	<layer name="Objects" cols="0" rows="0" tileW="30" tileH="30" collides="0">
+	</layer>
+
+	
+	<layer name="Background_01" cols="6" rows="1" tileW="600" tileH="400" collides="0">
+		<tile id="L32_1" c="0" r="0" />
+		<tile id="L32_2" c="1" r="0" />
+		<tile id="L32_3" c="2" r="0" />
+		<tile id="L32_2" c="3" r="0" />
+		<tile id="L32_1" c="4" r="0" />
+		<tile id="L32_3" c="5" r="0" />
+	</layer>
+	
+	<layer name="Sky_01" cols="3" rows="1" tileW="600" tileH="400" collides="0">
+	</layer>
+	
+</layers>

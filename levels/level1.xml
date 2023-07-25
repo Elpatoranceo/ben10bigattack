@@ -1,0 +1,97 @@
+﻿<layers>
+	
+	<layer name="Enemies">
+	
+	<!-- Boss -->
+		 <boss
+			id = "NNJ1" 
+			positionX = "3650" 
+			positionY = "350" 
+			damageMeele = "6" 
+			speedWalk = "5" 
+			speedBackShort = "8" 
+			speedBackLong  = "10"
+			speedRangeAttack  = "10" 
+			timeFindPlayer = "1600"
+			timeWaitThink  = "800"
+			timeRangeShootActive = "8000"
+			speedXBullet = "16" 
+			damageBullet = "8"
+			health = "160"
+			score = "1000"
+		/>
+		
+	<!-- Enemies in the game -->
+		 <freeEnemies>
+			 <enemy id="SG1" x="45" y="345" speed="5" health="20" damage="5" points="125"/>
+			 <enemy id="SG1" x="270" y="300" speed="3" health="14" damage="4" points="100"/>
+			 <enemy id="SG2" x="300" y="395" speed="4" health="20" damage="4" damageProjectil="4" points="150" color="1"/>		
+ 			 <enemy id="SG1" x="500" y="345" speed="4" health="14" damage="4" points="100"/>
+		  </freeEnemies> 
+	<!-- Objects in the game -->
+		
+		<objects>
+			<object id="BOX1" x="25" y="390" health="1" bonus="6"/>
+			<object id="BOX2" x="300" y="350" health="7" bonus="2"/>
+			<object id="LASER_GENERATOR" x="1400" y="230" damage="3" speed="4" timeRepeat="950" separation="200" type="0" />
+			<object id="LASER_GENERATOR" x="1700" y="230" damage="3" speed="4" timeRepeat="950" separation="200" type="0" />
+			<object id="LASER_DEVICE" x="2100" y="230" damage="3" num="10" separation="30" timeRepeat="120" type="1" />						
+			<object id="BOX3" x="2700" y="320" health="10.5" bonus="2"/>
+			<object id="BOX3" x="2820" y="320.5" health="10.5" bonus="0"/>
+			<object id="BOX2" x="2820" y="320.3" health="21" bonus="0"/>
+			<object id="BOX1" x="2820" y="320" health="28" bonus="7"/>
+			<object id="BOX1" x="3300" y="330" health="1" bonus="2"/>		
+		</objects>
+		
+	<!-- screen 2 -->
+		<breakpoint maxEnemies="3">
+			<enemy id="SG3" y="320" speed="2" damageProjectil="4" dir="2" timeWait="4" points="200" color="2"/>
+			<enemy id="SG3" y="340" speed="2" damageProjectil="4" dir="2" timeWait="4" points="200" color="2"/>
+			<enemy id="SG1" speed="3" health="14" damage="4" dir="1" points="100"/>
+			<enemy id="SG2" speed="4" health="20" damage="4" damageProjectil="4" dir="0" points="150" color="1"/>
+			<enemy id="SG1" speed="5" health="20" damage="5" dir="1" points="125"/>
+			<enemy id="SG1" speed="3" health="14" damage="4" dir="0" points="100"/>
+			<enemy id="SG2" speed="4" health="20" damage="4" damageProjectil="4" dir="1" points="150" color="1"/>
+			<!--<enemy id="SG2" speed="5" health="32" damage="5" damageProjectil="5" dir="0" points="350" color="3"/> -->
+			<enemy id="SG1" speed="3" health="14" damage="4" dir="1" points="100"/>
+			<enemy id="SG1" speed="5" health="20" damage="5" dir="0" points="125"/>
+			<enemy id="SG2" speed="4" health="20" damage="4" damageProjectil="5" dir="0" points="150" color="1"/>
+		</breakpoint>
+				
+	<!-- screen 3 -->	
+		<breakpoint maxEnemies="3">
+			<enemy id="SG1" speed="3" health="14" damage="4" dir="0" points="100"/>
+			<enemy id="SG2" speed="4" health="20" damage="4" damageProjectil="4" dir="0" points="150" color="1"/>
+			<enemy id="SG1" speed="5" health="20" damage="5" dir="0" points="125"/>
+			<enemy id="SG1" speed="3" health="14" damage="4" dir="0" points="100"/>
+			<enemy id="SG2" speed="4" health="20" damage="4" damageProjectil="4" dir="0" points="150" color="1"/>
+			<enemy id="SG2" speed="4" health="20" damage="4" damageProjectil="4" dir="0" points="150" color="1"/>
+			<enemy id="SG1" speed="3" health="14" damage="4" dir="0"/>
+			<enemy id="SG2" speed="4" health="20" damage="4" damageProjectil="4" dir="0" points="150" color="1"/>
+		</breakpoint>
+		
+	</layer>
+	
+	
+	<layer name="Objects" cols="0" rows="0" tileW="30" tileH="30" collides="0">
+	</layer>
+	
+ 
+	<layer name="Background_01" cols="7" rows="1" tileW="600" tileH="400" collides="0">
+		<tile id="L11_1" c="0" r="0" />
+		<tile id="L11_3" c="1" r="0" />
+		<tile id="L11_2" c="2" r="0" />
+		<tile id="L11_2" c="3" r="0" />
+		<tile id="L11_4" c="4" r="0" />		
+		<tile id="L11_3" c="5" r="0" />
+		<tile id="L11_4" c="6" r="0" />
+		
+	</layer>
+	
+	<layer name="Sky_01" cols="3" rows="1" tileW="600" tileH="400" collides="0">
+		<tile id="L11_30b" c="0" r="0" />
+		<tile id="L11_30b" c="1" r="0" />
+		<tile id="L11_30b" c="2" r="0" />
+	</layer>
+	
+</layers>

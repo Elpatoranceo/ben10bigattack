@@ -1,0 +1,279 @@
+<Infiltrator>
+	
+	<gameSettings 
+		startingLives = "3"
+		initLevel = "0"
+		
+		speedBen = "4"
+		speedBenWolf = "6.5"
+		speedFourArms = "4"
+		speedEyeGuy = "5.2"
+		
+		damageBenWolf = "3.5"
+		damageFourArms = "5"
+		damageEyeGuy = "4"
+		
+		damageJumpBenWolf = "3.5"
+		damageJumpFourArms = "5"
+		damageJumpEyeGuy = "4"
+		
+		damageSpStrongBenWolf = "0"
+		damageSpStrongFourArms = "40"
+		damageSpStrongEyeGuy = "32"
+		
+		damageSpWeakBenWolf = "0"
+		damageSpWeakFourArms = "16"
+		damageSpWeakEyeGuy = "12"
+		
+		impulseBenWolf = "-44"
+		impulseFourArms = "-41"
+		impulseEyeGuy = "-42"
+		
+		resistanceBenWolf = "0.92"
+		resistanceFourArms = "1.2"
+		resistanceEyeGuy = "1"
+		
+		timeParalizeSpWeak = "110"
+		timeParalizeSpStrong = "230"
+		
+		rechargePowerPerHit = "3"
+		
+		speedEnemyBullet = "15"
+		damageFallingObjects = "4"
+		
+		timeOutCombo = "3500"
+		pointsPerCombo = "10"
+		
+		bonusHealth  = "40"
+		bonusOmnitrix  = "30"
+		bonusExtraLife  = "1"
+		
+		displaceXjumpBenWolf = "1.9"
+		displaceXjumpFourArms = "1.2"
+		displaceXjumpEyeGuy = "1.5"
+		
+		damageShootPlayer = "4"
+		initGameWithAlien = "3"
+		initOmnitrixPower = "0"
+
+		
+	/>
+<!-- Real World With in Level 1 is 3600 -->
+	<level
+		name = "level_1_1"
+		startingPlayerX = "340"
+		startingPlayerY = "330"
+		worldWidth = "4200"
+		worldHeight = "400"
+		tilesUrl = "levels/level0.xml"
+		timeBonus = "400"
+		forceTimeBonus="1"
+		breakPoints = "2,3,4,5,6"
+		modeElevator = "0"
+		initClipMessage = "mcTextStage1"
+	/>
+	
+	<level
+		name = "level_1_2"
+		startingPlayerX = "100"
+		startingPlayerY = "330"
+		worldWidth = "3600"
+		worldHeight = "400"
+		tilesUrl = "levels/level1.xml"
+		timeBonus = "200"
+		forceTimeBonus="0"
+		breakPoints = "2,5"
+		modeElevator = "0"
+		initClipMessage = ""
+	/>
+	
+	<level
+		name = "level_2_1"
+		startingPlayerX = "340"
+		startingPlayerY = "330"
+		worldWidth = "3600"
+		worldHeight = "400"
+		tilesUrl = "levels/level2.xml"
+		timeBonus = "500"
+		forceTimeBonus="1"
+		breakPoints = "2,3,4,6"
+		modeElevator = "0"
+		initClipMessage = "mcTextStage2"
+	/>
+	
+	<level
+		name = "level_2_2"
+		startingPlayerX = "100"
+		startingPlayerY = "330"
+		worldWidth = "600"
+		worldHeight = "400"
+		tilesUrl = "levels/level3.xml"
+		timeBonus = "300"
+		forceTimeBonus="0"
+		breakPoints = "1"
+		modeElevator = "1"
+		initClipMessage = ""
+	/>
+	
+	<level
+		name = "level_2_3"
+		startingPlayerX = "100"
+		startingPlayerY = "330"
+		worldWidth = "3000"
+		worldHeight = "400"
+		tilesUrl = "levels/level4.xml"
+		timeBonus = "100"
+		forceTimeBonus="0"
+		breakPoints = "2,4,5"
+		modeElevator = "0"
+		initClipMessage = ""
+	/>
+	
+	<level
+		name = "level_3_1"
+		startingPlayerX = "340"
+		startingPlayerY = "330"
+		worldWidth = "4200"
+		worldHeight = "400"
+		tilesUrl = "levels/level5.xml"
+		timeBonus = "850"
+		forceTimeBonus="1"
+		breakPoints = "2,3,4,5,6"
+		modeElevator = "0"
+		initClipMessage = "mcTextStage3"
+	/>
+	
+	<level
+		name = "level_3_2"
+		startingPlayerX = "100"
+		startingPlayerY = "330"
+		worldWidth = "4200"
+		worldHeight = "400"
+		tilesUrl = "levels/level6.xml"
+		timeBonus = "400"
+		forceTimeBonus="0"
+		breakPoints = "2,4,5,6"
+		modeElevator = "0"
+		initClipMessage = ""
+	/>
+	
+	<level
+		name = "level_3_3"
+		startingPlayerX = "100"
+		startingPlayerY = "330"
+		worldWidth = "1800"
+		worldHeight = "400"
+		tilesUrl = "levels/level7.xml"
+		timeBonus = "200"
+		forceTimeBonus="0"
+		breakPoints = "2"
+		modeElevator = "0"
+		initClipMessage = ""
+	/>	
+	
+	<bossFinal 
+		id = "FKINGTITAN"
+		positionX = "1500"
+		positionY = "185" 
+
+		timeWaitIntro = "2000"
+		timeFireShoot = "2500"
+		speedIntro = "8"
+		speedUpAttackH = "30"
+		speedDownAttackH = "40"
+		speedSideAttackM = "20"
+		speedBackAttackM = "20"
+		speedUpAttackS = "30"
+		speedOutAttackS = "30"
+		speedInsideAttackF = "20"
+		speedFollowAttackF = "5"
+		speedDownAttackF = "35"
+		speedUpAttackF = "30"
+		speedNextPositionAttackF = "5"
+		speedOutSideAttackF = "15"
+		posXHorizontalLeft = "40"
+		posXHorizontalRight = "560"
+		posXVerticalLeft = "100"
+		posXVerticalRight = "500"
+		health = "320"
+		damageArm = "8"
+		speedBullet = "10"
+		damageBullet = "12"
+		damageDizzy = "15"
+		score = "5000"	
+	/>
+	
+	<tileTable>
+		<!-- background Level 1.0-->
+		<tile id="L1_1" c="0" i="SC_lvl1_screen_01" />
+		<tile id="L1_2" c="0" i="SC_lvl1_screen_02" />
+		<tile id="L1_3" c="0" i="SC_lvl1_screen_03" />
+		<tile id="L1_4" c="0" i="SC_lvl1_screen_04" />
+		<tile id="L1_5" c="0" i="SC_lvl1_screen_05" />
+		<tile id="L1_6" c="0" i="SC_lvl1_screen_06" />
+		<tile id="L1_7" c="0" i="SC_lvl1_screen_07" />
+		<tile id="L1_8" c="0" i="SC_lvl1_screen_08" />
+		<tile id="L1_9" c="0" i="SC_lvl1_screen_09" />
+		<tile id="L1_10" c="0" i="SC_lvl1_screen_10" />
+		<tile id="L1_11" c="0" i="SC_lvl1_screen_11" />
+		<tile id="L1_12" c="0" i="SC_lvl1_screen_12" />
+		<tile id="L1_13" c="0" i="SC_lvl1_screen_13" />
+		<tile id="L1_20f" c="0" i="SC_lvl1_screen_front_01" />
+		<tile id="L1_21f" c="0" i="SC_lvl1_screen_front_02" />
+		
+		<!-- background Level 1.1-->
+		<tile id="L11_1" c="0" i="SC_lvl1_1_screen_01" />
+		<tile id="L11_2" c="0" i="SC_lvl1_1_screen_02" />
+		<tile id="L11_3" c="0" i="SC_lvl1_1_screen_03" />
+		<tile id="L11_4" c="0" i="SC_lvl1_1_screen_04" />
+		<tile id="L11_30b" c="0" i="SC_lvl1_1_screen_back_01" />
+		
+		<tile id = "L21_1" c="0" i="SCN_lvl2_1_screen_01" />
+		<tile id = "L21_2" c="0" i="SCN_lvl2_1_screen_02" />
+		<tile id = "L21_3" c="0" i="SCN_lvl2_1_screen_03" />
+		<tile id = "L21_4" c="0" i="SCN_lvl2_1_screen_04" />
+		<tile id = "L21_5" c="0" i="SCN_lvl2_1_screen_05" />
+		<tile id = "L21_6" c="0" i="SCN_lvl2_1_screen_06" />
+		<tile id = "L21_1b" c="0" i="SCN_lvl2_1_screen_back_01" />
+		<tile id = "L21_1f" c="0" i="SCN_lvl2_1_screen_front_01" />
+		<tile id = "L21_2f" c="0" i="SCN_lvl2_1_screen_front_02" />
+			
+		<!-- Background Level 2.2 -->
+		<tile id = "L22_1" c="0" i="SCN_lvl2_2_elevator_screen_01" />
+		
+		<!-- Background Level 2.3 -->
+		<tile id = "L23_1" c="0" i="SC_lvl2_2_screen_01" />
+		<tile id = "L23_2" c="0" i="SC_lvl2_2_screen_02" />
+		<tile id = "L23_3" c="0" i="SC_lvl2_2_screen_03" />
+		<tile id = "L23_4" c="0" i="SC_lvl2_2_screen_04" />
+		<tile id = "L23_5" c="0" i="SC_lvl2_2_screen_05" />
+		<tile id = "L23_6" c="0" i="SC_lvl2_2_screen_06" />
+		<tile id = "L23_7" c="0" i="SC_lvl2_2_screen_07" />
+		<tile id = "L23_1f" c="0" i="SC_lvl2_2_screen_front_01" />
+		<tile id = "L23_2f" c="0" i="SC_lvl2_2_screen_front_02" />
+		
+		<!-- background Level 3.1-->
+		<tile id="L13_1" c="0" i="SC_lvl3_1_screen_01" />
+		<tile id="L13_2" c="0" i="SC_lvl3_1_screen_02" />
+		<tile id="L13_20f" c="0" i="SC_lvl3_1_screen_front_01" />
+		<tile id="L13_21f" c="0" i="SC_lvl3_1_screen_front_02" />
+		<tile id="L13_30b" c="0" i="SC_lvl3_1_screen_back_01" />
+		<tile id="L13_31b" c="0" i="SC_lvl3_1_screen_back_02" />
+		<tile id="L13_32b" c="0" i="SC_lvl3_1_screen_back_03" />
+		
+		<!-- Background Level 3.2 -->
+		<tile id = "L32_1"  c="0" i="SC_lvl3_2_screen_01"/>
+		<tile id = "L32_3"  c="0" i="SC_lvl3_2_screen_02"/>
+		<tile id = "L32_2"  c="0" i="SC_lvl3_2_screen_03"/>
+				
+	</tileTable>
+	
+	<debug
+		freeCamera = "0"
+		seeCollisions = "1"
+		adjustableTiles = "0"
+		debug = "1"
+		onlyCamera = "0"
+	/>
+	
+</Infiltrator>

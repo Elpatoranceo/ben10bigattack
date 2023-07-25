@@ -1,0 +1,141 @@
+﻿<layers>
+	
+	<layer name="Enemies">
+	
+	<!-- boss -->
+		<boss />
+	
+	<!-- Enemies in the game -->
+		<freeEnemies>
+			<enemy id="SG1" x="60" y="310" speed="5" health="20" damage="5" timeInit="1500" points="125" timeinit="10000"/>
+			<enemy id="SG1" x="580" y="360" speed="5" health="20" damage="5" timeInit="1500" points="125" timeinit="10000"/>
+			<enemy id="DB1" x="1100" y="300" speed="3.5" health="40" damage="6" points="350" timeinit="5000"/>
+			<enemy id="DB1" x="1100" y="390" speed="3.5" health="40" damage="6" points="350" timeinit="5000"/>
+			<enemy id="DB1" x="2800" y="345" speed="3.5" health="40" damage="6" points="350" timeinit="5000"/>
+			<enemy id="SG1" x="2800" y="305" speed="5" health="20" damage="5" timeInit="1500" points="125" timeinit="10000"/>
+			<enemy id="SG1" x="2800" y="385" speed="5" health="20" damage="5" timeInit="1500" points="125" timeinit="10000"/>
+			<enemy id="SG2" x="3250" y="320" speed="5" health="38" damage="5" damageProjectil="5" points="350" color="3"/>
+			<enemy id="SG2" x="3250" y="340" speed="5" health="38" damage="5" damageProjectil="5" points="350" color="3"/>		
+		</freeEnemies>
+	<!-- Objects in the game -->
+		<objects>
+			<object id="ST1" x="300" y="390" health="4"/>
+			<object id="ST1" x="380" y="390" health="4" bonus="3"/>
+			<object id="ST1" x="830" y="300" health="4" bonus="2"/>			
+			<object id="ST1" x="2500" y="397" health="4"/>
+			<object id="ST1" x="2530" y="365" health="4" bonus="5"/>
+			<object id="ST1" x="2590" y="301" health="4"/>	
+			<object id="ST1" x="3400" y="370" health="4"/>	
+			<object id="ST1" x="3430" y="390" health="4" bonus="6"/>	
+			<object id="ST1" x="3460" y="370" health="4"/>	
+		
+			<object id="MINIBOSS" x="3600" y="340" damage="3" health="30" num="8" speed="3" points="2000"/>
+		</objects>
+		
+	<!-- screen 2 -->
+		<breakpoint maxEnemies="5">
+			<enemy id="DB1" x="750" y="345" speed="3.5" health="40" damage="6" points="350" timeinit="10000" falling="1"/>
+		</breakpoint>
+	
+	<!-- screen 3 -->	
+		<breakpoint maxEnemies="3">
+			<enemy id="SG1" speed="5" health="20" damage="5" dir="0" points="125"/>
+			<enemy id="SG1" speed="4" health="14" damage="4" dir="1" points="100"/>
+			<enemy id="SG2" speed="5" health="38" damage="5" damageProjectil="5" dir="1" points="300" color="3"/>
+			<enemy id="CB" speed="6" health="28" damage="6" dir="0" points="250" falling="1"/>
+			<enemy id="DB1" speed="3.5" health="40" damage="6" dir="0" points="350"/>
+			<enemy id="DB2" speed="2.5" health="40" damage="5" dir="2" damageProjectil="6" points="350" />
+			<enemy id="SG2" speed="4" health="20" damage="4" dir="1" damageProjectil="4" points="150" color="1"/>		
+		</breakpoint>
+	
+	<!-- screen 4 -->	
+		<breakpoint maxEnemies="3">
+			<enemy id="CB" speed="6" health="28" damage="6" dir="1" points="250" falling="1"/>
+			<enemy id="CB" speed="6" health="28" damage="6" dir="2" points="250" falling="1"/>
+			<enemy id="CB" speed="6" health="28" damage="6" dir="0" points="250" falling="1"/>
+			<enemy id="SG2" speed="5" health="38" damage="5" damageProjectil="5" dir="1" points="300" color="3"/>
+			<enemy id="DB2" speed="2.5" health="40" damage="5" dir="0" damageProjectil="6" points="350" />
+		</breakpoint>
+
+	<!-- screen 5 -->
+		<breakpoint maxEnemies="6">
+			
+		</breakpoint>
+		
+	<!-- screen 6 -->	
+		<breakpoint maxEnemies="6">
+			
+		</breakpoint>	
+		
+	<!-- screen 7 -->	
+		
+		<breakpoint maxEnemies="2">
+			<enemy id="DB1" x="3700" y="345" speed="3.5" health="40" damage="6" points="350" falling="1" bonus="2"/>
+			<enemy id="DB1" x="4100" y="345" speed="3.5" health="40" damage="6" points="350" falling="1"/>
+		</breakpoint>
+		
+		<breakpoint maxEnemies="2">
+			<enemy id="SG1" x="3700" y="320" speed="4" health="14" damage="4" dir="1" points="100" falling="1" />
+			<enemy id="SG1" x="3730" y="360" speed="4" health="14" damage="4" dir="2" points="100" falling="1" />
+		</breakpoint>
+
+		<breakpoint maxEnemies="2">
+			<enemy id="DB2" x="4100" y="345" speed="2.5" health="40" damage="5" damageProjectil="6" points="350" falling="1" bonus="1"/>
+			<enemy id="DB2" x="3700" y="345" speed="2.5" health="40" damage="5" damageProjectil="6" points="350" falling="1" bonus="2"/>		
+		</breakpoint>
+			
+		<breakpoint maxEnemies="2">
+			<enemy id="SG1" x="3700" y="320" speed="4" health="14" damage="4" dir="1" points="100" falling="1" />
+			<enemy id="SG1" x="4100" y="360" speed="4" health="14" damage="4" dir="2" points="100" falling="1" />
+		</breakpoint>
+
+		<breakpoint maxEnemies="2">
+			<enemy id="DB2" x="4100" y="345" speed="2.5" health="40" damage="5" damageProjectil="6" points="350" falling="1"bonus="2"/>
+			<enemy id="DB2" x="3700" y="345" speed="2.5" health="40" damage="5" damageProjectil="6" points="350" falling="1"bonus="3"/>		
+		</breakpoint>
+	
+		<breakpoint maxEnemies="4">
+			<enemy id="SG1" speed="3" health="14" damage="4" dir="1" points="100"/>
+			<enemy id="SG1" speed="3" health="14" damage="4" dir="2" points="100"/>
+			<enemy id="SG1" speed="3" health="14" damage="4" dir="1" points="100"/>
+			<enemy id="SG1" speed="3" health="14" damage="4" dir="2" points="100"/>
+		</breakpoint>
+		
+		<breakpoint maxEnemies="2">
+			<enemy id="DB1" x="3700" y="345" speed="3.5" health="40" damage="6" points="350" falling="1" bonus="4"/>
+			<enemy id="DB1" x="4100" y="345" speed="3.5" health="40" damage="6" points="350" falling="1" bonus="2"/>
+		</breakpoint>
+	</layer>
+	
+	
+	<!-- Tiles world-->	
+	<layer name="Foreground_01" cols="3" rows="1" tileW="600" tileH="400" collides="0">
+		<tile id="L13_20f" c="1" r="0" />
+		<tile id="L13_21f" c="2" r="0" />
+	</layer>
+	
+	<layer name="Objects" cols="0" rows="0" tileW="30" tileH="30" collides="0">
+	</layer>
+	
+	<layer name="Background_01" cols="7" rows="1" tileW="600" tileH="400" collides="0">
+		<tile id="L13_1" c="0" r="0" />
+		<tile id="L13_2" c="1" r="0" />
+		<tile id="L13_1" c="2" r="0" />
+		<tile id="L13_2" c="3" r="0" />
+		<tile id="L13_2" c="4" r="0" />
+		<tile id="L13_1" c="5" r="0" />
+		<tile id="L13_1" c="6" r="0" />
+	</layer>
+	
+	<layer name="Sky_01" cols="4" rows="1" tileW="600" tileH="400" collides="0">
+		<tile id="L13_32b" c="0" r="0" />
+		<tile id="L13_32b" c="1" r="0" />
+		<tile id="L13_32b" c="2" r="0" />
+		<tile id="L13_30b" c="3" r="0" />
+	</layer>
+	
+	<layer name="Sky_02" cols="1" rows="1" tileW="700" tileH="400" collides="0">
+		<tile id="L13_31b" c="0" r="0" />
+	</layer>
+	
+</layers>

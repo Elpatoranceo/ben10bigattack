@@ -1,0 +1,75 @@
+﻿<layers>
+	
+	<layer name="Enemies">
+	
+	<!-- boss -->
+		<boss />	
+
+	<!-- Enemies in the game -->
+		 <freeEnemies>
+			 <enemy id="SG1" x="890" y="360" speed="2" health="20" damage="3" points="100" />
+		</freeEnemies> 
+	<!-- Objects in the game -->
+		<objects>
+			<object id="WALLE" x="0" y="0" health="15"/>
+			<object id="BOX1" x="300" y="300" health="1" bonus="3"/>
+		</objects>
+		
+	<!-- screen 2 -->
+		<breakpoint maxEnemies="6">
+			<enemy id="SG1" x="110" y="380" speed="4" health="14" damage="4" dir="1" points="100" falling="1" />
+			<enemy id="SG1" x="110" y="300" speed="4" health="14" damage="4" dir="2" points="100" falling="1" />
+			<enemy id="SG2" x="300" y="380" speed="3" health="20" damage="4" dir="2" damageProjectil="4" points="150" falling="1" color="1"/>		
+			<enemy id="SG1" x="150" y="320" speed="4" health="14" damage="4" dir="2" points="100" falling="1" />
+			<enemy id="SG2" x="480" y="340" speed="3" health="20" damage="4" dir="1" damageProjectil="4" points="150" falling="1" color="1"/>
+			<enemy id="SG2" x="500" y="320" speed="3" health="20" damage="4" dir="2" damageProjectil="4" points="150" falling="1" color="1"/>
+			
+		</breakpoint>
+		
+		<breakpoint maxEnemies="4">
+			<enemy id="SG1" x="150" y="320" speed="4" health="14" damage="4" dir="1" points="100" falling="1" />
+			<enemy id="SG1" x="200" y="360" speed="4" health="20" damage="5" dir="2" points="100" falling="1" />
+			<enemy id="SG2" x="110" y="390" speed="3" health="20" damage="4" dir="2" damageProjectil="4" points="150" falling="1" color="1"/>
+			<enemy id="CB" x="270" y="330" speed="6" health="28" damage="6" dir="2" points="250" falling="1" />
+		</breakpoint>
+	<!-- screen 3 -->	
+		<breakpoint maxEnemies="3">
+			<enemy id="CB" x="490" y="350" speed="6" health="28" damage="6" dir="2" points="250" falling="1" />
+			<enemy id="CB" x="200" y="325" speed="6" health="28" damage="6" dir="2" points="250" falling="1" />			
+				<!--<enemy id="SG2" x="100" y="340" speed="4" health="20" damage="4" dir="1" damageProjectil="4" points="150" falling="1" color="1"/>-->
+			<enemy id="SG2" x="150" y="320" speed="5" health="38" damage="5" damageProjectil="5" dir="2" points="300" color="3" falling="1"/>
+		</breakpoint>
+	
+	<!-- screen 4 -->	
+		<breakpoint maxEnemies="3">
+			<enemy id="SG1" x="200" y="360" speed="4" health="24" damage="5" dir="2" points="150" falling="1" />
+			<enemy id="SG2" x="110" y="390" speed="4" health="24" damage="4" dir="2" damageProjectil="4" points="150" falling="1" color="1"/>
+			<enemy id="CB" x="270" y="330" speed="6" health="28" damage="6" dir="2" points="250" falling="1" />
+		</breakpoint>
+
+	<!-- screen 5 -->	
+		<breakpoint maxEnemies="4">
+			<enemy id="SG1" x="100" y="380" speed="4" health="14" damage="4" dir="1" points="100" falling="1" />
+			<enemy id="SG1" x="130" y="300" speed="4" health="14" damage="4" dir="2" points="100" falling="1" />
+			<enemy id="SG1" x="500" y="380" speed="4" health="14" damage="4" dir="1" points="100" falling="1" />
+			<enemy id="SG2" x="460" y="300" speed="5" health="38" damage="5" damageProjectil="5" dir="2" points="300" color="3" falling="1" />
+		</breakpoint>
+		
+	<!-- screen 5 -->	
+		<breakpoint maxEnemies="2">
+			<enemy id="CB" x="250" y="320" speed="6" health="28" damage="6" dir="2" points="250" falling="1" />
+			<enemy id="CB" x="200" y="325" speed="6" health="28" damage="6" dir="2" points="250" falling="1" />
+		</breakpoint>	
+		
+	</layer>
+	
+	
+	<layer name="Objects" cols="0" rows="0" tileW="30" tileH="30" collides="0">
+	</layer>
+
+	
+	<layer name="Background_01" cols="8" rows="1" tileW="600" tileH="400" collides="0">
+		<tile id="L22_1" c="0" r="0" />
+	</layer>
+	
+</layers>
